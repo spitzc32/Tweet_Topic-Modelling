@@ -1,0 +1,74 @@
+MultinomialNB
+Accuracy:  0.3
+
+Classification Report for
+======================================================
+
+               precision    recall  f1-score   support
+
+           0       0.07      0.50      0.12         4
+           1       0.83      0.28      0.42        36
+
+    accuracy                           0.30        40
+   macro avg       0.45      0.39      0.27        40
+weighted avg       0.76      0.30      0.39        40
+
+XGBoost
+Accuracy:  0.7
+
+Classification Report for
+======================================================
+
+               precision    recall  f1-score   support
+
+           0       0.21      0.75      0.33         4
+           1       0.96      0.69      0.81        36
+
+    accuracy                           0.70        40
+   macro avg       0.59      0.72      0.57        40
+weighted avg       0.89      0.70      0.76        40
+
+Accuracy:  0.525
+
+Classification Report for
+======================================================
+
+               precision    recall  f1-score   support
+
+           0       0.14      0.75      0.24         4
+           1       0.95      0.50      0.65        36
+
+    accuracy                           0.53        40
+   macro avg       0.55      0.62      0.45        40
+weighted avg       0.87      0.53      0.61        40
+
+
+Decision Tree
+ Accuracy:  0.55
+
+Classification Report for
+======================================================
+
+               precision    recall  f1-score   support
+
+           0       0.06      0.25      0.10         4
+           1       0.88      0.58      0.70        36
+
+    accuracy                           0.55        40
+   macro avg       0.47      0.42      0.40        40
+weighted avg       0.79      0.55      0.64        40
+
+Vote Classifier
+ Accuracy:  0.525
+
+Classification Report for
+======================================================
+
+               precision    recall  f1-score   support
+
+           0       0.14      0.75      0.24         4
+           1       0.95      0.50      0.65        36
+
+    accuracy                           0.53        40
+   macro avg       0.55      0.62      0.45        40
+weighted avg       0.87      0.53      0.61        40
