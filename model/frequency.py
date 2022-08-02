@@ -11,6 +11,7 @@ class ClassModel():
         classifcation_lr = LogisticRegression(
                 C=0.75, 
                 penalty='l2',
+                max_iter=2000,
                 solver = 'liblinear'
             )
         classifcation_lr.fit(self.X_train, self.Y_train)
@@ -24,17 +25,7 @@ class ClassModel():
         )
         classifcation_sgd.fit(self.X_train, self.Y_train)
 
-         # SGD Modified Huber
-        classifcation_sgd_huber = SGDClassifier(
-            max_iter=1000,
-            tol=1e-3,
-            alpha=20,
-            loss='modified_huber',
-            class_weight='balanced'
-        )
-        classifcation_sgd_huber.fit(self.X_train, self.Y_train)
-
-        return [("LogisticRegressionFreq",classifcation_lr), ("SGDFreq",classifcation_sgd), ("SGDHuberFreq",classifcation_sgd_huber)]
+        return [("LogisticRegressionFreq",classifcation_lr), ("SGDFreq",classifcation_sgd)]
     
     def save(self, file_name, model):
         with open(file_name, "wb") as file:
